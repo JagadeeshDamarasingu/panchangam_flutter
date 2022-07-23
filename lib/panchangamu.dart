@@ -29,6 +29,7 @@
 library panchangam;
 
 import 'package:flutter/material.dart';
+import 'package:panchangam/widgets/month_with_days_view.dart';
 
 class PanchangamView extends StatefulWidget {
   const PanchangamView({DateTime? selectedDate, super.key});
@@ -42,13 +43,15 @@ class _PanchangamState extends State<PanchangamView> {
   Widget build(BuildContext context) {
     return OrientationBuilder(
       builder: (context, orientation) {
+        final dateTime = DateTime.now();
         return Container(
           color: Colors.orange,
           constraints: const BoxConstraints.tightFor(width: double.infinity),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text("Arunachala Shiva!"),
+              const Text("Arunachala Shiva!"),
+              MonthWithDaysView(dateTime.year, dateTime.month),
             ],
           ),
         );

@@ -1,7 +1,7 @@
 name: panchangam
 description: A Panchangam UI Widget.
 version: 0.0.1
-homepage:
+homepage: cyberyogi.io
 
 environment:
   sdk: '>=2.19.0-29.0.dev <3.0.0'
