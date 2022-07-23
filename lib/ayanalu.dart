@@ -1,0 +1,1 @@
+enum Aayanamu { uttarayanamu, dakshinayanamu }
